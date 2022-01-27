@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.wrapping{
+display: flex
+}
+
+.wrapping-btn{
+  display: flex;
+flex-wrap: nowrap;
+justify-content: flex-start;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 8%;
+  transition: 0.3s;
+  width: 25%;
+  margin-right:4px;
+  margin-left:4px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.btn{
+    margin-left: auto;
+padding: 8px;
+background-color: #e5e5e5;
+margin-right: auto;
+margin-bottom: 20px;
+border-radius: 8%;
+}
+
+.container {
+  padding: 2px 16px;
+  display: grid;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border-radius: 2%;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+
+<div class="wrapping">
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1605860632725-fa88d0ce7a07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Avatar" style="width:100%;border-top-left-radius:8%;border-top-right-radius:8%">
+  <div class="container">
+    <h2><b>Bromo</b></h2> 
+    <p>Berdiri kokoh setinggi 2.329 meter di atas permukaan laut, Gunung Bromo menyimpan keindahan alam yang sayang untuk dilewatkan. Gunung berapi yang masih aktif ini secara administratif berada di empat wilayah kabupaten di Jawa Timur, antara lain Kabupaten Malang, Pasuruan, Lumajang dan Probolinggo</p> 
+    <button class="btn" id="myBtn">Selengkapnya</button>
+  </div>
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="https://images.unsplash.com/photo-1605860632725-fa88d0ce7a07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Avatar" style="width:100%;border-top-left-radius:8%;border-top-right-radius:8%">
+      <h4><b>Bromo</b></h4> 
+      <p>Berdiri kokoh setinggi 2.329 meter di atas permukaan laut, Gunung Bromo menyimpan keindahan alam yang sayang untuk dilewatkan. Gunung berapi yang masih aktif ini secara administratif berada di empat wilayah kabupaten di Jawa Timur, antara lain Kabupaten Malang, Pasuruan, Lumajang dan Probolinggo. Hal ini memudahkan wisatawan untuk datang dari arah manapun. Gunung ini merupakan bagian dari Taman Nasional Bromo Tengger Semeru dan telah menjadi tempat wisata paling terkenal di provinsi Jawa Timur. Taman nasional seluas 800 km persegi ini melingkupi kawasan Gunung Bromo dan Gunung Semeru.</p>
+    </div>
+  
+  </div>
+</div>
+<div class="card">
+  <img src="https://pngimg.com/uploads/iphone_13/iphone_13_PNG2.png" alt="Avatar" style="width:50%;border-top-left-radius:8%;border-top-right-radius:8%; margin-left: 25%;">
+  <div class="container">
+    <h2 style="margin-bottom: 2px;"><b>Apple iPhone 13 256GB</b></h2> 
+    <p>KOTA JAKARTA UTARA - PENJARINGAN, DKI JAKARTA, ID</p>
+    <p>iPhone 13. Sistem kamera ganda paling canggih yang pernah ada di iPhone. Chip A15 Bionic yang secepat kilat. Lompatan besar dalam kekuatan baterai. Desain kokoh. Dan layar Super Retina XDR yang lebih cerah.</p> 
+    <div class="wrapping-btn">
+      <a href="#" style="color: rgb(6, 136, 211); margin-right: 16px;text-decoration-style: -moz-none;">Beri Penilaian</a>
+      <a href="#" style="color: rgb(6, 136, 211); margin-right: 16px;text-decoration-style: -moz-none;">Info Penting</a>
+    </div>
+  </div>
+
+  
+</div>
+<div class="card">
+  <div style="display: flex;padding: 12px;">
+    <img src="https://images.unsplash.com/photo-1601412436009-d964bd02edbc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60" alt="Avatar" style="width: 60px;border-radius: 60%;height: 60px;margin-right: 12px;">
+ <div style="padding: 10px;">
+  <p style="margin-top: 0px;margin-bottom: 0px;">Lisa</p>
+  <p style="margin-top: 4px;color: #9E9E9E;margin-bottom: 0px;">20 Mins, ago</p>
+
+ </div>
+  </div>
+  <img src="https://images.unsplash.com/photo-1605860632725-fa88d0ce7a07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Avatar" style="width:100%;border-top-left-radius:0%;border-top-right-radius:0%">
+  <div class="container">
+    <h2 style="margin-bottom: 2px;"><b>Bromo Mountain</b></h2> 
+    <p style="color: #9E9E9E;margin-top: 0px;margin-bottom: 2px;">Malang</p> 
+    <p>Seeing the beauty of the sun rising from the eastern horizon on Mount Bromo slowly may become an infinitely beautiful gift. The combination of yellow, orange, black and blue colors produced by this natural phenomenon is truly an interesting sight that is presented to our eyes who see it. </p> 
+  </div>
+
+</div>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1605860632725-fa88d0ce7a07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Avatar" style="width:100%;border-top-left-radius:8%;border-top-right-radius:8%">
+  <div  style="display: flex;justify-content: flex-end;">
+    <img src="https://image.flaticon.com/icons/png/512/1216/1216575.png" alt="Avatar" style="width:6%;border-top-left-radius:8%;border-top-right-radius:8%;margin: 4px;">
+    <img src="https://image.flaticon.com/icons/png/512/1174/1174447.png" alt="Avatar" style="width:6%;border-top-left-radius:8%;border-top-right-radius:8%;margin: 4px;">
+    <img src="https://image.flaticon.com/icons/png/512/1250/1250657.png" alt="Avatar" style="width:6%;border-top-left-radius:8%;border-top-right-radius:8%;margin: 4px;">
+  </div>
+</div>
+
+</div>
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+</body>
+</html> 
